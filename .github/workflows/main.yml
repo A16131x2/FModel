@@ -6,7 +6,7 @@ on:
         appVersion:
           description: 'FModel Version And Release Tag'
           required: true
-          default: '4.0.X.X'
+          default: '4.0.0.0'  # 修改：将 '4.0.X.X' 改为 '4.0.0.0'
 
 jobs:
   build:
@@ -46,3 +46,4 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
           files: FModel.zip
+
